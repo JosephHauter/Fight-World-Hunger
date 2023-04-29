@@ -18,6 +18,7 @@ This is a web application that allows users to sign a petition in support of a c
 ## Getting Started
 
 To run the application, simply open the `index.html` file in your web browser. The application does not require any additional setup or installation.
+Alternatively you can also use the gitpage to view the site live.
 
 ## Usage
 
