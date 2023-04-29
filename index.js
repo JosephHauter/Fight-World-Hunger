@@ -15,7 +15,7 @@ let signNowButton = document.getElementById("sign-now-button");
 // Step 1: Refactor your code to use objects for petition submission
 const addSignature = (person) => {
   if (person.name.trim().length >= 2 && person.country.trim().length >= 2 && person.email.trim().length >= 2 && person.email.includes('@') && person.email.includes('.')) {
-    const newSignature = `${person.name} from ${person.country}`;
+    const newSignature = `🖊️ ${person.name} from ${person.country} supports this.`;
     const newSignatures = document.querySelector(".signatures");
     const newSignatureParagraph = document.createElement("p");
     newSignatureParagraph.textContent = newSignature;
@@ -147,7 +147,7 @@ function toggleModal(person) {
 
   // Animate the image within the modal
   let intervalId = setInterval(scaleImage, 500);
-  
+
   // Hide the modal after a few seconds
   setTimeout(() => {
     clearInterval(intervalId);
